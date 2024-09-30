@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="index.js">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Тут створюється контейнер для всього калькулятора. Всередині нього будуть поле вводу та кнопки. -->
+     
+    
+      <!-- Тут знаходиться поле, куди буде виводитися введене користувачем значення та результат обчислень.
+      Воно зроблене лише для перегляду, тому не можна вручну вводити значення (disabled). -->
+
+      
+        <!-- Кнопка "C" очищає екран калькулятора, прибираючи всі введені значення. Викликає функцію clearDisplay(). -->
+        
+        <!-- Кнопка з числом "7". При натисканні на неї викликається функція appendToDisplay('7'), яка додає це число на екран калькулятора. -->
+        
+        <!-- Кнопка з числом "8". Працює так само, як і кнопка "7", тільки додає число "8". -->
+        
+        <!-- Кнопка з числом "9". Працює аналогічно попереднім, додаючи "9" на екран. -->
+        
+        <!-- Кнопка ділення. При натисканні на неї на екран додається символ ділення "/". -->
+        
+        <!-- Кнопка з числом "4". При натисканні додає "4" на екран. -->
+        
+        <!-- Кнопка з числом "5". При натисканні додає "5" на екран. -->
+        
+        <!-- Кнопка з числом "6". При натисканні додає "6" на екран. -->
+        
+        <!-- Кнопка множення. Додає символ множення "*" на екран. -->
+        
+        <!-- Кнопка з числом "1". При натисканні додає "1" на екран. -->
+        
+        <!-- Кнопка з числом "2". При натисканні додає "2" на екран. -->
+        
+        <!-- Кнопка з числом "3". При натисканні додає "3" на екран. -->
+        
+        <!-- Кнопка для віднімання. Додає символ "-" на екран. -->
+        
+        <!-- Кнопка з числом "0". Додає "0" на екран при натисканні. -->
+        
+        <!-- Кнопка для додавання десяткової крапки (дробової частини). Додає "." на екран. -->
+        
+        <!-- Кнопка рівності "=". При натисканні викликає функцію calculate(), яка обчислює результат введеного виразу. -->
+        
+        <!-- Кнопка для додавання. Додає символ "+" на екран. -->
+      
+    
+    <!-- Підключення файлу script.js, де знаходяться всі функції, які виконуються при натисканні на кнопки. -->
+     <div class="clculator">
+      <div class="buttons">
+
+        <button onclick="clearDispaly()">C</button>
+
+
+        <button onclick="appendToDisplay('7')">7</button>
+
+        <button onclick="appendToDisplay('8')">8</button>
+
+        <button onclick="appendToDisplay('9')">9</button>
+
+        <button onclick="appendToDisplay('/')">/</button>
+
+        <button onclick="appendToDisplay('4')">4</button>
+
+        <button onclick="appendToDisplay('5')">5</button>
+
+        <button onclick="appendToDisplay('6')">6</button>
+
+        <button onclick="appendToDisplay('*')">*</button>
+
+        <button onclick="appendToDisplay('1')">1</button>
+
+        <button onclick="appendToDisplay('2')">2</button>
+
+        <button onclick="appendToDisplay('3')">3</button>
+
+        <button onclick="appendToDisplay('-')">-</button>
+
+        <button onclick="appendToDisplay('8')">0</button>
+
+        <button onclick="appendToDisplay('.')">.</button>
+
+        <button onclick="appendToDisplay('')">+</button>
+      
+        <button onclick="calculate()">=</button>
+      </div>
+     </div>
+  </body>
+
+</html>
